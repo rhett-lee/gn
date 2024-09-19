@@ -6,6 +6,7 @@
 #define TOOLS_GN_ESCAPE_H_
 
 #include <iosfwd>
+#include <string>
 #include <string_view>
 
 enum EscapingMode {
@@ -33,7 +34,7 @@ enum EscapingMode {
   ESCAPE_NINJA_PREFORMATTED_COMMAND,
 
   // Shell escaping as described by JSON Compilation Database spec:
-  // Parameters use shell quoting and shell escaping of quotes, with ‘"’ and ‘\’
+  // Parameters use shell quoting and shell escaping of quotes, with """ and "\"
   // being the only special characters.
   ESCAPE_COMPILATION_DATABASE,
 };

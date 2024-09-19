@@ -1,5 +1,5 @@
 rule cxx
-  command = $cxx /nologo /showIncludes /FC $includes $cflags /c $in /Fo$out
+  command = $cxx /nologo /FC $includes $cflags /c $in /Fo$out
   description = CXX $out
   deps = msvc
 
